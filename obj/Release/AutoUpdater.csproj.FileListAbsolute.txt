@@ -8,3 +8,10 @@ D:\OneDrive - Hordaland fylkeskommune\Random Code Backup\TwitchChatCoroutines\Au
 D:\OneDrive - Hordaland fylkeskommune\Random Code Backup\TwitchChatCoroutines\Zip\AutoUpdater.exe.config
 D:\OneDrive - Hordaland fylkeskommune\Random Code Backup\TwitchChatCoroutines\Zip\AutoUpdater.exe
 D:\OneDrive - Hordaland fylkeskommune\Random Code Backup\TwitchChatCoroutines\Zip\AutoUpdater.pdb
+C:\Users\Thomas\OneDrive - Hordaland fylkeskommune\Random Code Backup\TwitchChatCoroutines\Zip\AutoUpdater.exe.config
+C:\Users\Thomas\OneDrive - Hordaland fylkeskommune\Random Code Backup\TwitchChatCoroutines\Zip\AutoUpdater.exe
+C:\Users\Thomas\OneDrive - Hordaland fylkeskommune\Random Code Backup\TwitchChatCoroutines\Zip\AutoUpdater.pdb
+C:\Users\Thomas\OneDrive - Hordaland fylkeskommune\Random Code Backup\TwitchChatCoroutines\AutoUpdater\obj\Release\AutoUpdater.csproj.CoreCompileInputs.cache
+C:\Users\Thomas\OneDrive - Hordaland fylkeskommune\Random Code Backup\TwitchChatCoroutines\AutoUpdater\obj\Release\AutoUpdater.exe
+C:\Users\Thomas\OneDrive - Hordaland fylkeskommune\Random Code Backup\TwitchChatCoroutines\AutoUpdater\obj\Release\AutoUpdater.pdb
+C:\Users\Thomas\OneDrive - Hordaland fylkeskommune\Random Code Backup\TwitchChatCoroutines\AutoUpdater\obj\Release\AutoUpdater.csprojResolveAssemblyReference.cache

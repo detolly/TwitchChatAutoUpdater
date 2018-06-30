@@ -26,7 +26,9 @@ namespace AutoUpdater
             {
                 using (WebClient client = new WebClient())
                 {
+                    Console.WriteLine("Downloading update..");
                     client.DownloadFile(url, "update.zip");
+                    Console.WriteLine("Download successful.");
                 }
                 bool e = true;
                 while (e)
@@ -41,14 +43,19 @@ namespace AutoUpdater
                 if (File.Exists("TwitchChatCoroutines.exe"))
                 {
                     File.Copy("TwitchChatCoroutines.exe", "TwitchChatCoroutines.exe.old");
+                    Console.WriteLine("Deleting " + "TwitchChatCoroutines.exe");
+                    System.Threading.Thread.Sleep(100);
                     File.Delete("TwitchChatCoroutines.exe");
                 }
                 if (File.Exists("Newtonsoft.Json.dll"))
                 {
                     File.Copy("Newtonsoft.Json.dll", "Newtonsoft.Json.dll.old");
+                    Console.WriteLine("Deleting " + "Newtonsoft.Json.dll");
+                    System.Threading.Thread.Sleep(100);
                     File.Delete("Newtonsoft.Json.dll");
                 }
                 ZipFile.ExtractToDirectory("./update.zip", "./update");
+                System.Threading.Thread.Sleep(100);
                 var arr = Directory.GetFiles("./update");
                 foreach (string a in arr)
                 {
@@ -56,14 +63,20 @@ namespace AutoUpdater
                     string x = a.Substring(u);
                     if (x == "AutoUpdater.exe")
                     {
+                        Directory.CreateDirectory("./.AutoUpdater");
+                        File.Copy(a, "./.AutoUpdater/AutoUpdater.exe");
+                        System.Threading.Thread.Sleep(100);
                         File.Delete(a);
                         continue;
                     }
                     File.Copy(a, "./" + x);
+                    System.Threading.Thread.Sleep(100);
                     File.Delete(a);
                 }
                 Directory.Delete("./update");
+                Console.WriteLine("Deleting update.zip");
                 File.Delete("update.zip");
+                System.Threading.Thread.Sleep(100);
                 System.Diagnostics.Process.Start("TwitchChatCoroutines.exe");
                 if (File.Exists("TwitchChatCoroutines.exe.old"))
                     File.Delete("TwitchChatCoroutines.exe.old");
